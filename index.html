@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>project</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+</head>
+<body><!-- 23 -->
+<div class="wrapper" id="wrapper">
+
+<div class="header">
+	<div class="menu">
+		<div class="menu_body container">
+
+			<nav class="menu__nav">
+				<div class="div_for_mobile_menu_for_search"></div><!-- cюда перебросяца второй поисковик -->
+				<div class="div_for_mobile_menu_items"></div><!-- cюда перебросяца некоторые пункты меню при адобтиве -->
+				<ul class="menu__list">
+					<li><a href="#main" class="menu__link _slow_scroll">Главная</a></li>
+					<li><a href="#about" class="menu__link _slow_scroll">О компании</a></li>
+					<li><a href="#clients" class="menu__link _slow_scroll">Наши клиенты</a></li>
+					<li><a href="#review" class="menu__link _slow_scroll">Отзывы</a></li>
+					<li><a href="#certificates" class="menu__link _slow_scroll">Сертификаты</a></li>
+					<li><a href="#certificates" class="menu__link _slow_scroll">Оплата и доставка</a></li>
+					<li><a href="#us" class="menu__link _slow_scroll">Работа у нас</a></li>
+					<li><a href="#contact" class="menu__link _slow_scroll">Контакты</a></li>
+				</ul>
+			</nav>	
+
+			<a href="#" class="menu_control_button" data-da=".div_for_mobile_menu_items, 992, 0">Служба контроля качества</a>	
+
+			<div class="menu__logo_img"><img src="./img/logo.png" alt="logo">	</div>
+
+			<div class="search_form"> 	
+				<form action="#" class="search_on_site_form">
+					<input type="text" class="search_form_input"  placeholder="Поиск..."  name="search_form_input">
+					<button class="search_form_btn" type="button">
+						<svg  class="lupa_svg">
+							<use xlink:href="sprite.svg#lupa_svg"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+
+			<div class="option_form" data-da=".div_for_mobile_menu_items, 992, 2"> 	
+				<form action="#" class="option_form_form">
+					<label for="formSelect_rodzaj" class="form_lable"></label>
+					 <select id="formSelect_rodzaj" class="form_input input" name="rodzaj">
+					 	<option>Москва</option>
+					 	<option>Киев</option>
+					 	<option>Минск</option>
+					 </select>
+				</form>
+			</div>
+
+			<div class="feedback_conteiner">
+				<div class="feedback"  data-da=".div_for_mobile_menu_items, 992, 1">Обратная связь</div>
+				<div class="whatsapp" data-da=".mob_wen_mob, 700, 0">
+					<svg  class="whatsapp_svg">
+							<use xlink:href="sprite.svg#whatsapp_svg"></use>
+						</svg>
+						<div class="whatsapp_tel">+7 (985) 213-11-51</div>
+					
+				</div>
+			</div>
+
+			<div class="menu_tel"   data-da=".mob_wen_mob, 700, 1">
+				<p>+7 (495) 234-56-78</p>
+				<p>+7 (495) 234-56-78</p>
+			</div>
+
+			<a href="#" class="product_button">Каталог товаров</a><!-- появляеться только после 991 и при нажатии выплывает католог товаров-->
+
+
+			<div class="button_for_tel_mobl"><!-- появляеться только после 768 и при нажатии выплывут телефоны-->
+				<svg  class="mob_svg">
+					<use xlink:href="sprite.svg#mob_svg"></use>
+				</svg>
+				<svg  class="whatsapp_mob_svg">
+					<use xlink:href="sprite.svg#whatsapp_svg"></use>
+				</svg>
+				<svg  class="menu_arrow_mob">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+				<div class="mob_wen_mob"></div><!-- cюда попадут телефоны при мобильной версии -->
+			</div>
+
+
+
+
+			 <button class="search_form_btn_for_mobile" type="button"><svg  class="lupa_svg_for_modile">
+							<use xlink:href="sprite.svg#lupa_svg"></use>
+						</svg></button><!--эта кнопка будет появляться на моб и заменять собой search_form в флексовом ряду менюхи, в то время как сама менюха абсолютится к menu_body-->
+
+			<div class="basket">
+				<div class="basket_price">17359р</div><!-- появляеться только после 768     -->
+				<div class="basket_icon"><img src="img/korzina.svg" alt=""><div class="basket_number">3</div></div>
+				
+			</div>
+
+			<div class="burger_button">
+				<div class="header__burger">
+				<span></span>
+				</div>
+				<div class="burger_button_word">Меню </div>
+			</div>
+
+		</div> 
+	</div>
+
+
+	<div class="header_two">
+		<div class="header_two_title" data-da=".div_for_mobile_menu_for_search, 700, 0">Подобрать светильник по аналогу других производителей</div>
+		<div class="header_two_body container">
+
+			<div class="header_two_first" data-da=".menu_body, 700, 1"> 
+				<div class="header_two_first_img"> 
+					<img src="img/icon_for_header.png" alt="">
+				</div>
+				<div class="header_two_text_container">
+				<div class="header_two_text header_two_text_left">Гарантия</div>
+				<div class="header_two_text header_two_text_left"><span>до 8 лет</span></div>
+				</div>
+			</div>
+
+			<div class="header_two_search_form_container" data-da=".div_for_mobile_menu_for_search, 700, 1">
+				<form action="#" class="header_two_site_form">
+					<input type="text" class="header_two_search_form_input"  placeholder="Введите артикул товара или название модели"  name="header_two_form_input">
+					<button class="header_two_form_btn" type="button">
+						<svg  class="header_two_lupa_svg">
+							<use xlink:href="sprite.svg#lupa_svg"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+			<div class="header_two_second"  data-da=".menu_body, 700, 0"> 
+				<div class="header_two_text"><span>100% соблюдение</span></div>
+				<div class="header_two_text">сроков доставки</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
+<!-- -------------------------------------------- _main ------------------------------------------------------------------------------ -->
+
+<div class="main" id="main">
+	<div class="main_body container">
+
+
+		<div class="product_catalog">
+			<div class="product_catalog_body">
+				<div class="product_catalog_title">Каталог товаров</div>
+
+
+                 <div class="accord" id="accord">
+								<button class="accordion hummer">
+									<div class="accordion_title">Промышленное освещение</div>
+									<div class="accordion_arrov">
+										<svg  class="accordion_arrow_mob">
+											<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+										</svg>
+									</div>
+								</button>
+								<div class="panel">
+								  <div class="panel_body">
+										<ul class="product_catalog_ul">
+											<li class="product_catalog_li">пункт 1</li>
+											<li class="product_catalog_li">пункт 2</li>
+											<li class="product_catalog_li">пункт 3</li>
+											<li class="product_catalog_li">пункт 4</li>
+										</ul>
+									</div>
+								</div>
+
+								<button class="accordion hummer">
+									<div class="accordion_title">Уличное светодиодное освещение</div>
+									<div class="accordion_arrov">
+										<svg  class="accordion_arrow_mob">
+											<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+										</svg>
+									</div>
+								</button>
+								<div class="panel">
+								  <div class="panel_body">
+										<ul class="product_catalog_ul">
+											<li class="product_catalog_li">пункт 1</li>
+											<li class="product_catalog_li">пункт 2</li>
+											<li class="product_catalog_li">пункт 3</li>
+											<li class="product_catalog_li">пункт 4</li>
+										</ul>
+									</div>
+								</div>
+
+				
+
+
+							<button class="accordion hummer">
+								<div class="accordion_title">Офисное светодиодное освещение</div>
+								<div class="accordion_arrov">
+									<svg  class="accordion_arrow_mob">
+										<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+									</svg>
+								</div>
+							</button>
+							<div class="panel">
+							  <div class="panel_body">
+									<ul class="product_catalog_ul">
+										<li class="product_catalog_li">пункт 1</li>
+										<li class="product_catalog_li">пункт 2</li>
+										<li class="product_catalog_li">пункт 3</li>
+										<li class="product_catalog_li">пункт 4</li>
+									</ul>
+								</div>
+							</div>
+
+
+							<button class="accordion hummer">
+								<div class="accordion_title">Торговое светодиодное освещение</div>
+								<div class="accordion_arrov">
+									<svg  class="accordion_arrow_mob">
+										<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+									</svg>
+								</div>
+							</button>
+							<div class="panel">
+							  <div class="panel_body">
+									<ul class="product_catalog_ul">
+										<li class="product_catalog_li">пункт 1</li>
+										<li class="product_catalog_li">пункт 2</li>
+										<li class="product_catalog_li">пункт 3</li>
+										<li class="product_catalog_li">пункт 4</li>
+									</ul>
+								</div>
+							</div>
+
+				
+
+
+				<button class="accordion">
+						<div class="accordion_title">Архитектурное освещение</div>		
+				</button>
+				<button class="accordion">
+						<div class="accordion_title">Светодиодные светильники ЖКХ</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Подвесные светодиодные светильники</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Светодиодные светильники IP65</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Линейные светодиодные светильники</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Модульные светодиодные светильники</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Трековые светодиодные светильники</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Точечные светодиодные светильники</div>		
+				</button>
+
+				<button class="accordion">
+						<div class="accordion_title">Светодиодная лента и прожекторы</div>		
+				</button>
+
+
+
+
+					<button class="accordion hummer">
+						<div class="accordion_title">Бактерицидные рециркуляторы</div>
+						<div class="accordion_arrov">
+							<svg  class="accordion_arrow_mob">
+								<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+							</svg>
+						</div>
+				</button>
+					<div class="panel">
+					  <div class="panel_body">
+							<ul class="product_catalog_ul">
+								<li class="product_catalog_li">пункт 1</li>
+								<li class="product_catalog_li">пункт 2</li>
+								<li class="product_catalog_li">пункт 3</li>
+								<li class="product_catalog_li">пункт 4</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+		
+
+
+        <div class="image_product_catalog">
+        	<div class="image_product_catalog_body">
+        		
+        		<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/1.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Промышленное</span> освещение</div>
+        		</div>
+
+        		<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/2.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 1 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Уличное</span> светодиодное освещение</div>
+        		</div>
+
+        	<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/3.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 23 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Офисное </span>светодиодное освещение</div>
+        		</div>
+
+        		<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/4.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 444 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Торговое</span> светодиодное освещение</div>
+        		</div>
+
+
+
+
+
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/5.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Архитектурное </span>освещение</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/6.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Светодиодные </span>светильники ЖКХ</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/7.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Подвесные</span> светодиодные светильники</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/8.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Светодиодные</span> светильники IP65</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/9.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Линейные</span> светодиодные светильники</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/10.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Модульные</span> светодиодное освещение</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/11.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Трековые</span> светодиодное освещение</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/12.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Точечные</span> светодиодное освещение</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/13.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Торговое</span> светодиодное освещение</div>
+        		</div>
+
+        			<div class="product_catalog_item">
+        			<div class="product_catalog_item_head">
+        				<div class="product_catalog_item_head_img">
+        					<img src="img/main/14.jpg" alt="">
+        					<div class="product_catalog_item_head_price">
+        						<div class="product_catalog_item_head_price_text">От 999 руб.</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="product_catalog_item_bottom"><span>Бактерицидные рециркуляторы</span></div>
+        		</div>
+
+
+
+        	</div>
+        </div>
+
+	</div>
+</div>
+
+
+
+<!-- --------------------------------------------clients------------------------------------------------------------------------------ -->
+
+
+<div class="clients" id="clients">
+	<div class="clients_body container">
+		<div class="clients_swiper_button_next">
+				<svg  class="clients_swiper_arrow_next_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+			</div>
+     		<div class="clients_swiper_button_prev">
+     			<svg  class="clients_swiper_arrow_prev_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+     		</div>
+		<div class="clients_title">
+			<div class="clients_title_text">некоторые наши клиенты 
+                 <div class="clients_title_text_bg"><img src="img/slider_one/slider_one_bg.png" alt=""></div>
+			</div>
+		</div>
+		<div class="clients_slider_container">
+			<div class="swiper-container clients_swiper">
+            <div class="swiper-wrapper">
+            	
+            		<div class="swiper-slide">
+            			<div class="clients_swiper_slide_container">
+	            			<img src="img/slider_one/1.png" alt="">
+	            		</div>
+	            	</div>
+	            	<div class="swiper-slide">
+            			<div class="clients_swiper_slide_container">
+	            			<img src="img/slider_one/2.png" alt="">
+	            		</div>
+	            	</div>
+	            	<div class="swiper-slide">
+            			<div class="clients_swiper_slide_container">
+	            			<img src="img/slider_one/3.png" alt="">
+	            		</div>
+	            	</div>
+	            	<div class="swiper-slide">
+            			<div class="clients_swiper_slide_container">
+	            			<img src="img/slider_one/4.png" alt="">
+	            		</div>
+	            	</div>
+            	
+            </div>
+			</div>
+		
+		</div>
+	</div>
+	<div class="clients_text">и еще более 350 000 корпоративных и частных клиентов по всей России!</div>
+	
+</div>
+
+
+
+<div class="infoblock" id="about">
+	<div class="infoblock_body container">
+
+			<div class="infoblock_bg_opacity"></div>
+		<div class="infoblock_content">
+			<div class="infoblock_title">Светодиодное освещение</div>
+			<div class="infoblock_text">
+				<p>Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях. Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.</p>
+				<p>Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="review" id="review">
+	<div class="review_body">
+		<div class="review_title">Отзывы
+			<div class="review_swiper_button_next" data-da=".review_body, 768, 1">
+				<svg  class="review_swiper_arrow_next_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+			</div>
+     		<div class="review_swiper_button_prev" data-da=".review_body, 768, 2">
+     			<svg  class="review_swiper_arrow_prev_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+     		</div>
+		</div>
+		<div class="review_slider_container">
+			<div class="swiper-container review_swiper">
+            <div class="swiper-wrapper">
+            	<div class="swiper-slide">
+            			<div class="review_swiper_slide_container">
+	            			<div class="review_slide_lebal"><img src="img/review_lebal.png" alt=""></div>
+	            			<div class="review_slide_title">Светодиодный светильник</div>
+	            			<div class="review_slide_middle">
+	            				<div class="review_slide_middle_text">
+		            				<div class="review_slide_quotes">"</div>
+		            				<div class="review_slide_text active">1Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях. Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                                Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                            	</div>
+                            	</div>
+                            	<div class="review_slide_text_btn">Читать весь текст</div>
+	            			</div>
+	            			<div class="review_slide_bottom">
+	            				<div class="review_slide_date">20. 01. 2020</div>
+	            				<div class="review_slide_bottom_autor">
+	            					<div class="review_slide_bottom_autor_name_text">
+	            						<div class="review_slide_bottom_autor_name">Малькин В.А.</div>
+	            						<div class="review_slide_bottom_autor_position">Директор ООО “Ростикс”</div>
+	            					</div>
+	            					<div class="review_slide_bottom_autor_img"><img src="img/review_men.jpg" alt=""></div>
+	            				</div>
+	            			</div>
+	            		</div>
+	            	</div>
+
+
+	            	<div class="swiper-slide">
+            			<div class="review_swiper_slide_container">
+	            			<div class="review_slide_lebal"><img src="img/review_lebal.png" alt=""></div>
+	            			<div class="review_slide_title">Светодиодный светильник</div>
+	            			<div class="review_slide_middle">
+	            				<div class="review_slide_middle_text">
+		            				<div class="review_slide_quotes">"</div>
+		            				<div class="review_slide_text active">2Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях. Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                                Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                            	</div>
+                            	</div>
+                            	<div class="review_slide_text_btn">Читать весь текст</div>
+	            			</div>
+	            			<div class="review_slide_bottom">
+	            				<div class="review_slide_date">20. 01. 2020</div>
+	            				<div class="review_slide_bottom_autor">
+	            					<div class="review_slide_bottom_autor_name_text">
+	            						<div class="review_slide_bottom_autor_name">Малькин В.А.</div>
+	            						<div class="review_slide_bottom_autor_position">Директор ООО “Ростикс”</div>
+	            					</div>
+	            					<div class="review_slide_bottom_autor_img"><img src="img/review_men.jpg" alt=""></div>
+	            				</div>
+	            			</div>
+	            		</div>
+	            	</div>
+
+	            	<div class="swiper-slide">
+            			<div class="review_swiper_slide_container">
+	            			<div class="review_slide_lebal"><img src="img/review_lebal.png" alt=""></div>
+	            			<div class="review_slide_title">Светодиодный светильник</div>
+	            			<div class="review_slide_middle">
+	            				<div class="review_slide_middle_text">
+		            				<div class="review_slide_quotes">"</div>
+		            				<div class="review_slide_text active">3Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях. Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                                Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.
+	                            	</div>
+                            	</div>
+                            	<div class="review_slide_text_btn">Читать весь текст</div>
+	            			</div>
+	            			<div class="review_slide_bottom">
+	            				<div class="review_slide_date">20. 01. 2020</div>
+	            				<div class="review_slide_bottom_autor">
+	            					<div class="review_slide_bottom_autor_name_text">
+	            						<div class="review_slide_bottom_autor_name">Малькин В.А.</div>
+	            						<div class="review_slide_bottom_autor_position">Директор ООО “Ростикс”</div>
+	            					</div>
+	            					<div class="review_slide_bottom_autor_img"><img src="img/review_men.jpg" alt=""></div>
+	            				</div>
+	            			</div>
+	            		</div>
+	            	</div>
+
+
+
+            </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="infoblock" id="us">
+	<div class="infoblock_body container">
+
+			<div class="infoblock_bg_opacity"></div>
+		<div class="infoblock_content">
+			<div class="infoblock_title">Светодиодные светильники</div>
+			<div class="infoblock_text">
+				<p>Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях. Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.</p>
+				<p>Рециркуляторы бактерицидные напольно-настенные для общественных помещений передвижные предназначены для очистки и обеззараживания воздуха в общественных помещениях: в школьных классах, в помещениях производственных и торговых организаций, других помещениях общественных и административных зданий, а так же в жилых и офисных помещениях.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- -------------------------------------------------------------- certificates ------------------------------------------------------------------------------ -->
+
+<div class="certificates" id="certificates">
+	<div class="certificates_body ">
+		<div class="certificates_title">Вся продукция сертифицирована</div>
+	<div class="certificates_swiper_button_next">
+				<svg  class="certificates_swiper_arrow_next_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+			</div>
+     		<div class="certificatesswiper_button_prev">
+     			<svg  class="certificates_swiper_arrow_prev_svg">
+					<use xlink:href="sprite.svg#menu_arrow_mob"></use>
+				</svg>
+     		</div>
+		<div class="swiper-container certificates_swiper container">
+        <div class="swiper-wrapper">
+            	<div class="swiper-slide"><img src="img/certificates/1.jpg" alt=""></div>
+            	<div class="swiper-slide"><img src="img/certificates/2.jpg" alt=""></div>
+            	<div class="swiper-slide"><img src="img/certificates/3.jpg" alt=""></div>
+            	<div class="swiper-slide"><img src="img/certificates/4.jpg" alt=""></div>
+            	<div class="swiper-slide"><img src="img/certificates/5.jpg" alt=""></div>
+            	<div class="swiper-slide"><img src="img/certificates/6.jpg" alt=""></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- -------------------------------------------------------------- bottom ------------------------------------------------------------------------------ -->
+
+
+
+<div class="bottom" id="contact">
+	<div class="bottom_body container">
+
+		<div class="bottom_top">
+
+			<div class="bottom_logo_column">
+				<div class="bottom_logo_colum_logo"><img src="img/bottom/Logo_bottom.png" alt=""></div>
+				<div class="bottom_logo_colum_feedback">Обратная связь</div>
+				<div class="bottom_logo_colum_mail">info@vsesvetodiody.ru</div>
+			</div>
+
+			<div class="bottom_menu_column">
+				<ul class="bottom_menu_column_list">
+					<li><a href="#main" class="bottom_menu_link _slow_scroll">Главная</a></li>
+					<li><a href="#about" class="bottom_menu_link _slow_scroll">О компании</a></li>
+					<li><a href="#clients" class="bottom_menu_link _slow_scroll">Наши клиенты</a></li>
+					<li><a href="#us" class="bottom_menu_link _slow_scroll">Работа у нас</a></li>
+				</ul>
+				<ul class="bottom_menu_column_list">
+					<li><a href="#certificates" class="bottom_menu_link _slow_scroll">Сертификаты</a></li>
+					<li><a href="#review" class="bottom_menu_link _slow_scroll">Отзывы</a></li>
+					<li><a href="#us" class="bottom_menu_link _slow_scroll">Оплата и доставка</a></li>
+					<li><a href="#contact" class="bottom_menu_link _slow_scroll">Контакты</a></li>
+				</ul>
+			</div>
+
+
+
+
+			<div class="bottom_tel_colum">
+				<div class="bottom_tel_colum_tel">
+					<div>+7 (495) 234-56-78</div>
+					<div>+7 (495) 234-56-79</div>
+				</div>
+				<div class="bottom_tel_colum_control">Служба контроля качества</div>
+				<div class="bottom_tel_colum_adres">
+					Адрес:<br>г. Москва, ул. Рябиновая, владение 43А,<br> строение 9</div>
+			</div>
+
+		</div>
+
+		<div class="bottom_under">
+			 <div class="bottom_under_copipast">
+			 	<p>В магазине представлены все светодиодные светильники</p>
+				<p>(с) 2011 - 2021 “ВСЕСВЕТОДИОДЫ”</p>
+			 </div>
+			 <div class="bottom_under_cards">
+			 	<div class="bottom_under_cards_title">Принимаем к оплате:</div>
+			 	<div class="bottom_under_cards_body">
+				 	<div class="bottom_under_card"><img src="img/bottom/visa.png" alt=""></div>
+				 	<div class="bottom_under_card"><img src="img/bottom/mc.png" alt=""></div>
+				 	<div class="bottom_under_card"><img src="img/bottom/mir.png" alt=""></div>
+			 	</div>
+			 </div>
+			 <div class="bottom_under_social">
+			 	<div class="bottom_under_social_title">Мы в соцсетях:</div>
+			 	<div class="bottom_under_social_items">
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/vk.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/instagram.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/odnoklassniki.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/facebook.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/pinterest.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/youtube.png" alt=""></a></div>
+			 		<div class="bottom_under_social_item"><a href="#"><img src="img/bottom/pinterest.png" alt=""></a></div>
+			 	</div>
+			 </div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+</div>
+
+	<script src="js/script.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="js/dynamicAdapt.js"></script>
+</body>
+</html>
